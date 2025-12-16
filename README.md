@@ -11,6 +11,10 @@ Bulk syncs existing PM Hub users from PostgreSQL to Knock API, excluding users a
 3. Add the filtered users to Knock.
 4. Emit console tables and day-stamped logs to `logs/YYYY-MM-DD_knock_users.log` and `logs/YYYY-MM-DD_postgres_users.log`.
 
+## Notes
+
+- **Notificationsv1**: Only users with email domains `rentpure.com` and `purepm.co` are synced to Knock.
+
 ## Requirements
 
 - `curl` - HTTP client for API calls
