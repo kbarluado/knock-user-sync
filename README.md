@@ -8,7 +8,7 @@ Bulk syncs existing PM Hub users from PostgreSQL to Knock API, excluding users a
 
 1. Fetch all existing users from the Knock API.
 2. Query PostgreSQL for PM Hub users, excluding the Knock users, and select `name`, `person_id`, `email`, and `phone_number`.
-3. Bulk identify the remaining users in Knock.
+3. Add the filtered users to Knock.
 4. Emit console tables and day-stamped logs to `logs/YYYY-MM-DD_knock_users.log` and `logs/YYYY-MM-DD_postgres_users.log`.
 
 ## Requirements
